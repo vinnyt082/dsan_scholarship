@@ -1,0 +1,12 @@
+geo_level,geography,first_year,last_year,rows,min_commute,max_commute,zero_denominators,missing_commute
+national,United States,2005,2024,19,24.99020923572673,27.56432759935886,0,0
+selected county proxy,Atlanta area proxy,2023,2023,1,28.00357094503114,28.00357094503114,0,0
+selected county proxy,Charlotte area proxy,2023,2023,1,25.352366678378125,25.352366678378125,0,0
+selected county proxy,Chicago area proxy,2023,2023,1,31.851872920229823,31.851872920229823,0,0
+selected county proxy,Dallas area proxy,2023,2023,1,27.199346985002517,27.199346985002517,0,0
+selected county proxy,Denver area proxy,2023,2023,1,25.425859815765147,25.425859815765147,0,0
+selected county proxy,Los Angeles area proxy,2023,2023,1,30.791934689828043,30.791934689828043,0,0
+selected county proxy,New York area proxy,2023,2023,1,31.40232076427546,31.40232076427546,0,0
+selected county proxy,Phoenix area proxy,2023,2023,1,26.07291965120514,26.07291965120514,0,0
+selected county proxy,San Francisco area proxy,2023,2023,1,31.228407467211877,31.228407467211877,0,0
+selected county proxy,"Washington, DC area proxy",2023,2023,1,30.27902956261165,30.27902956261165,0,0

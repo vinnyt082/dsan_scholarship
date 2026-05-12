@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+altair
+plotly
+matplotlib
+seaborn
+jupyter
+fredapi
+requests
+python-dotenv
+

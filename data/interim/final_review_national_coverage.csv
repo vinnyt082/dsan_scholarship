@@ -1,0 +1,8 @@
+variable,first_year,last_year,non_null_years,missing_years
+median_home_price_nominal,1963,2026,64,16
+real_median_home_price,1963,2026,64,16
+real_median_household_income,1984,2024,41,39
+home_price_to_real_income_ratio,1984,2024,41,39
+mortgage_rate_annual_avg,1971,2026,56,24
+case_shiller_index,1987,2026,40,40
+national_mean_commute_minutes,2005,2024,19,61

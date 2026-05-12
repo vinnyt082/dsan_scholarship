@@ -1,0 +1,5 @@
+{
+  "url": "https://api.census.gov/data/2023/acs/acs5?get=NAME%2CB08013_001E%2CB08012_001E%2CB25077_001E%2CB19013_001E&for=county%3A113&in=state%3A48&key=REDACTED",
+  "status_code": 200,
+  "text": "[[\"NAME\",\"B08013_001E\",\"B08012_001E\",\"B25077_001E\",\"B19013_001E\",\"state\",\"county\"],\n[\"Dallas County, Texas\",\"30355940\",\"1116054\",\"277900\",\"74149\",\"48\",\"113\"]]"
+}

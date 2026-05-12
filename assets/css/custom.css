@@ -1,0 +1,963 @@
+/* =====================================================================
+   Trading Time for Affordability — global theme
+   ===================================================================== */
+
+:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --surface-soft: #fbfaf7;
+  --text: #22313a;
+  --muted: #667783;
+  --border: #dedbd4;
+
+  --housing: #9a3f2f;
+  --access: #2f7a7d;
+  --accent: #9a3f2f;
+  --accent-soft: #f3e7e1;
+  --access-soft: #e3f0f0;
+
+  --sidebar-bg: #242733;
+  --sidebar-text: #eef1f4;
+  --sidebar-muted: #aeb6bf;
+
+  /* Legacy aliases (harmonized) */
+  --story-bg: var(--bg);
+  --story-text: var(--text);
+  --story-muted: var(--muted);
+  --story-accent: var(--accent);
+  --story-access: var(--access);
+
+  --readable-max: 52rem;
+  --content-max: 1160px;
+  --radius-card: 12px;
+  --shadow-card:
+    0 2px 10px rgba(34, 49, 58, 0.06),
+    0 1px 3px rgba(34, 49, 58, 0.04);
+}
+
+.stApp {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.main .block-container {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3.25rem;
+  padding-bottom: 3rem;
+  padding-left: clamp(1rem, 3vw, 2rem);
+  padding-right: clamp(1rem, 3vw, 2rem);
+}
+
+@media (max-width: 768px) {
+  .main .block-container {
+    padding-top: 2.75rem;
+  }
+}
+
+header[data-testid="stHeader"] {
+  background: var(--surface-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+[data-testid="stDecoration"] {
+  display: none;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebarNav"] span,
+[data-testid="stSidebarNav"] a {
+  color: var(--sidebar-muted) !important;
+}
+
+[data-testid="stSidebarNav"] ul li span {
+  color: inherit !important;
+}
+
+[data-testid="stSidebarNav"] a[data-testid^="stPageLink"] span {
+  color: var(--sidebar-muted) !important;
+}
+
+[data-testid="stSidebarNav"] a[data-testid^="stPageLink"][aria-current="page"] span,
+[data-testid="stSidebarNav"] a[data-testid^="stPageLink"]:hover span {
+  color: var(--sidebar-text) !important;
+}
+
+[data-testid="stSidebarNav"] a[data-testid^="stPageLink"][aria-current="page"] {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+[data-testid="stSidebarCollapseButton"] svg,
+[data-testid="collapsedControl"] svg {
+  color: var(--sidebar-text);
+  stroke: var(--sidebar-text);
+  fill: var(--sidebar-text);
+}
+
+[data-testid="stSidebarCollapsedControl"] svg {
+  color: var(--sidebar-muted);
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.main h1:first-of-type,
+.block-container > div:first-child h1 {
+  font-size: 2.45rem;
+  font-weight: 800;
+  line-height: 1.12;
+  margin-bottom: 0.65rem;
+  padding-top: 0.15rem;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+p, li {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.main .story-readable,
+.story-readable {
+  max-width: var(--readable-max);
+}
+
+.section-kicker.section-head-normal {
+  margin-top: 2.15rem;
+}
+
+.section-kicker,
+.home-section-heading {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 2rem 0 0.7rem 0;
+}
+
+.section-kicker:first-of-type,
+.block-container > div:first-of-type .section-kicker {
+  margin-top: 0;
+}
+
+.main .stMarkdown h3:not([class]) {
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: var(--muted);
+  margin: 1.85rem 0 0.55rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.main .stMarkdown h3:not([class]):first-child {
+  margin-top: 0.5rem;
+}
+
+.chart-title,
+.housing-chart-title,
+.mortgage-chart-title {
+  margin: 0.15rem 0 0.25rem 0;
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.chart-title--secondary,
+.mortgage-chart-title {
+  font-size: 1.06rem;
+  font-weight: 650;
+  margin-top: 0.5rem;
+}
+
+.chart-subtitle,
+.housing-chart-subtitle,
+.mortgage-chart-subtitle {
+  margin: 0 0 0.85rem 0;
+  font-size: 0.93rem;
+  line-height: 1.48;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.chart-subtitle--secondary {
+  font-size: 0.88rem;
+  margin-bottom: 0.5rem;
+}
+
+.source-note {
+  font-size: 0.875rem !important;
+  line-height: 1.52 !important;
+  color: var(--muted) !important;
+}
+
+[data-testid="stCaption"] > div {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.48;
+}
+
+[data-testid="stCaption"] code {
+  color: inherit;
+  font-size: 0.88em;
+  background: var(--accent-soft);
+  padding: 0.05rem 0.25rem;
+  border-radius: 4px;
+}
+
+.section-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.25rem 0 2rem;
+  max-width: var(--readable-max);
+}
+
+/* Story cards (lens, snapshot, stats, implication, standout) */
+.story-card,
+.lens-card,
+.snapshot-card,
+.conclusion-layer-card,
+.conclusion-recap-card,
+.standout-list > div {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.lens-card,
+.snapshot-card {
+  padding: 1.15rem 1.25rem;
+}
+
+.snapshot-card__label {
+  font-size: 0.73rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.snapshot-card__value {
+  font-size: 1.62rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+.snapshot-card__caption {
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.lenses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0.5rem 0 2.25rem;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0.55rem 0 1.35rem;
+}
+
+.page-stat-row.snapshot-grid {
+  margin: 0.35rem 0 2.15rem;
+}
+
+@media (max-width: 900px) {
+  .lenses-grid,
+  .snapshot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lens-card {
+  height: 100%;
+  min-height: 120px;
+}
+
+.lens-card__title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--housing);
+}
+
+.lens-card__question {
+  font-size: 1.06rem;
+  font-weight: 650;
+  color: var(--text);
+  margin: 0.35rem 0 0.5rem;
+  line-height: 1.3;
+}
+
+.lens-card__desc {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.54;
+  color: var(--muted);
+}
+
+[data-testid="stPlotlyChart"] {
+  margin: 0.15rem 0 0.5rem;
+}
+
+/* Homepage */
+.home-subtitle {
+  font-size: 1.18rem;
+  color: var(--muted);
+  font-weight: 400;
+  margin: 0 0 1.4rem;
+  max-width: 48ch;
+  line-height: 1.46;
+}
+
+.home-intro {
+  max-width: var(--readable-max);
+  font-size: 1.06rem;
+  line-height: 1.62;
+  margin-bottom: 0.25rem;
+}
+
+.lens-leadin {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: -0.15rem 0 0.55rem;
+  max-width: var(--readable-max);
+}
+
+.snapshot-subtitle {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: -0.15rem 0 0.45rem;
+  max-width: var(--readable-max);
+}
+
+/* Legacy formula chips (kept for backward compat) */
+.formula-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 1.25rem;
+  max-width: var(--readable-max);
+}
+
+.formula-chip {
+  display: inline-block;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.72rem;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.formula-chip--outcome {
+  border-color: rgba(154, 63, 47, 0.35);
+  background: var(--accent-soft);
+  font-weight: 650;
+}
+
+.formula-op {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* ── Illustrated lens equation ── */
+.lens-equation {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 0.45rem 0 2.5rem;
+  max-width: var(--content-max);
+}
+
+.lens-eq-card {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 1.15rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.lens-eq-card--final {
+  border-color: rgba(154, 63, 47, 0.38);
+  background: linear-gradient(170deg, var(--accent-soft) 0%, var(--surface) 60%);
+  box-shadow:
+    0 3px 14px rgba(154, 63, 47, 0.08),
+    0 1px 4px rgba(34, 49, 58, 0.05);
+}
+
+.lens-eq-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 0.6rem;
+  flex-shrink: 0;
+}
+
+.lens-eq-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.lens-eq-title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.lens-eq-card--housing .lens-eq-title { color: var(--housing); }
+.lens-eq-card--income .lens-eq-title  { color: var(--housing); }
+.lens-eq-card--access .lens-eq-title  { color: var(--access); }
+.lens-eq-card--final .lens-eq-title   { color: var(--accent); }
+
+.lens-eq-desc {
+  font-size: 0.92rem;
+  line-height: 1.42;
+  color: var(--text);
+  font-weight: 550;
+  margin: 0;
+}
+
+.lens-eq-footer-label {
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+}
+
+.lens-eq-sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--muted);
+  user-select: none;
+  line-height: 1;
+}
+
+.lens-eq-sep--arrow {
+  font-size: 1.45rem;
+  color: var(--accent);
+}
+
+.lens-equation-footer {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: var(--readable-max);
+  text-align: center;
+  margin: -0.55rem 0 1.65rem;
+}
+
+/* Responsive: equation */
+@media (max-width: 1000px) {
+  .lens-equation {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    justify-content: center;
+  }
+  .lens-eq-card {
+    flex: 1 1 calc(50% - 2rem);
+    min-width: 200px;
+  }
+  .lens-eq-sep {
+    width: 28px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .lens-equation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .lens-eq-card {
+    flex: none;
+    width: 100%;
+  }
+  .lens-eq-sep {
+    width: 100%;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+  .lens-eq-sep--arrow {
+    font-size: 1.25rem;
+  }
+}
+
+/* Callouts */
+.story-callout,
+.home-central-question {
+  max-width: var(--readable-max);
+  border-left: 3px solid var(--access);
+  padding: 0.65rem 1.05rem;
+  margin: 0 0 1.85rem;
+  background: var(--surface);
+  border-radius: 0 10px 10px 0;
+  border-top: 1px solid rgba(223, 219, 212, 0.7);
+  border-right: 1px solid rgba(223, 219, 212, 0.7);
+  border-bottom: 1px solid rgba(223, 219, 212, 0.7);
+  font-size: 1.06rem;
+  font-weight: 650;
+  line-height: 1.52;
+}
+
+.takeaway-callout,
+.story-path-callout {
+  border-left: 3px solid var(--accent);
+  padding: 0.9rem 1.15rem;
+  margin: 1.65rem 0 0;
+  background: var(--surface-soft);
+  border-radius: 0 10px 10px 0;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  max-width: var(--readable-max);
+}
+
+.takeaway-callout p,
+.story-path-callout p {
+  margin: 0;
+}
+
+.housing-takeaway {
+  margin-top: 1.5rem;
+}
+
+.data-note,
+.data-method-note {
+  max-width: var(--readable-max);
+  font-size: 0.9rem;
+  line-height: 1.53;
+  color: var(--muted);
+  background: var(--surface);
+  border-left: 3px solid var(--border);
+  padding: 0.6rem 0.95rem;
+  margin: 0 0 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.method-note {
+  max-width: var(--readable-max);
+  font-size: 0.95rem;
+  line-height: 1.52;
+  color: var(--muted);
+  background: var(--surface);
+  border-left: 3px solid rgba(47, 122, 125, 0.55);
+  padding: 0.6rem 0.95rem;
+  margin: 0 0 1rem;
+}
+
+.paychecks-interpretation-note.method-note {
+  border-left-color: rgba(47, 122, 125, 0.55);
+}
+
+.caveat-callout,
+.conclusion-not-claim {
+  max-width: var(--readable-max);
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  color: var(--muted) !important;
+  padding: 0.45rem 0;
+  margin: 0 0 0.5rem !important;
+}
+
+.data-scope-note {
+  font-size: 0.9rem;
+  line-height: 1.54;
+  color: var(--muted);
+  margin: 0 0 1.15rem;
+  max-width: var(--readable-max);
+}
+
+.future-work-note {
+  max-width: var(--readable-max);
+  font-size: 0.9rem;
+  line-height: 1.53;
+  color: var(--muted);
+  margin: 0.35rem 0 1.1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.future-work-note strong {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.section-head-normal {
+  margin-top: 2rem;
+}
+
+/* Combined burden — quadrant color system */
+:root {
+  --q-ll: #90a990;
+  --q-lr: #c8a882;
+  --q-ul: #7bb8ba;
+  --q-ur: #c07060;
+  --q-ll-soft: rgba(144,169,144,0.10);
+  --q-lr-soft: rgba(194,163,130,0.10);
+  --q-ul-soft: rgba(47,122,125,0.10);
+  --q-ur-soft: rgba(154,63,47,0.10);
+}
+
+.quadrant-guide {
+  max-width: var(--readable-max);
+  margin: 0 0 1.35rem;
+  padding: 0.7rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.quadrant-guide__title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 0.45rem;
+}
+
+.quadrant-guide__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1rem;
+}
+
+@media (max-width: 700px) {
+  .quadrant-guide__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quadrant-guide__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.q-chip {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.q-chip--ll { background: var(--q-ll); }
+.q-chip--lr { background: var(--q-lr); }
+.q-chip--ul { background: var(--q-ul); }
+.q-chip--ur { background: var(--q-ur); }
+
+/* Standout insight cards */
+.standout-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0.5rem 0 1.35rem;
+  max-width: var(--readable-max);
+}
+
+.standout-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--border);
+}
+
+.standout-card--ur { border-left-color: var(--q-ur); }
+.standout-card--ul { border-left-color: var(--q-ul); }
+.standout-card--lr { border-left-color: var(--q-lr); }
+.standout-card--ll { border-left-color: var(--q-ll); }
+
+.standout-card__title {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+}
+
+.standout-card--ur .standout-card__title { color: var(--q-ur); }
+.standout-card--ul .standout-card__title { color: var(--q-ul); }
+.standout-card--lr .standout-card__title { color: var(--q-lr); }
+
+.standout-card__body {
+  font-size: 0.93rem;
+  line-height: 1.52;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Housing / paychecks intros */
+.story-page-intro,
+.housing-page-intro,
+.paychecks-page-intro {
+  max-width: var(--readable-max);
+  font-size: 1.045rem;
+  line-height: 1.62;
+}
+
+.housing-page-intro {
+  margin: 0 0 1.35rem;
+}
+
+.paychecks-page-intro {
+  margin: 0 0 0.85rem;
+}
+
+/* Conclusion */
+.section-heading-md {
+  font-size: 1.2rem;
+  font-weight: 750;
+  color: var(--text);
+  letter-spacing: -0.015em;
+  margin: 0.6rem 0 0.45rem;
+  line-height: 1.3;
+}
+
+.section-heading-md.section-head-normal {
+  margin-top: 1.75rem;
+}
+
+/* Conclusion step cards */
+.conclusion-step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+  margin: 0.3rem 0 1.65rem;
+}
+
+.conclusion-step-card {
+  background: var(--access-soft);
+  border: 1px solid rgba(47, 122, 125, 0.22);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 0.9rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.conclusion-step-card__title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--access);
+  margin-bottom: 0.32rem;
+}
+
+.conclusion-step-card__body {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.42;
+  color: var(--text);
+  flex: 1;
+}
+
+.conclusion-step-card__stat {
+  margin-top: auto;
+  padding: 0.55rem 0 0.7rem;
+  border-top: 1px solid rgba(47, 122, 125, 0.18);
+  margin-top: 0.6rem;
+}
+
+.conclusion-step-card__stat-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.conclusion-step-card--housing .conclusion-step-card__stat-value,
+.conclusion-step-card--paycheck .conclusion-step-card__stat-value {
+  color: var(--housing);
+}
+
+.conclusion-step-card--access .conclusion-step-card__stat-value {
+  color: var(--access);
+}
+
+.conclusion-step-card--combined .conclusion-step-card__stat-value {
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 1050px) {
+  .conclusion-step-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .conclusion-step-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Thesis callout */
+.thesis-callout {
+  max-width: var(--readable-max);
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(to right, var(--accent-soft), var(--surface) 55%);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.95rem 1.12rem;
+  border-radius: 0 10px 10px 0;
+  margin: 0.85rem 0 1.65rem;
+  box-shadow: var(--shadow-card);
+}
+
+.thesis-callout p {
+  margin: 0;
+  font-size: 1.045rem;
+  line-height: 1.52;
+  font-weight: 650;
+  color: var(--text);
+}
+
+/* Implication cards */
+.implication-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.35rem 0 1.35rem;
+  max-width: var(--readable-max);
+}
+
+.implication-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 0.85rem 1.1rem;
+}
+
+.implication-card__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.implication-card__body {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.48;
+  color: var(--muted);
+}
+
+/* Conclusion bridge paragraph */
+.conclusion-bridge {
+  max-width: var(--readable-max);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0 0 1.5rem;
+}
+
+.conclusion-closing {
+  margin: 0.75rem 0 0;
+  font-size: 1.035rem;
+  color: var(--muted);
+  max-width: var(--readable-max);
+}
+
+/* Metrics & misc */
+[data-testid="stMetric"] {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+[data-testid="stMetricLabel"] {
+  color: var(--muted);
+}
+
+[data-testid="stMetricValue"] {
+  color: var(--accent);
+}
+
+.stCaption {
+  color: var(--muted);
+}
+
+div[data-testid="stExpander"] {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  margin-top: 0.75rem;
+  background: var(--surface-soft);
+  box-shadow: none;
+}
+
+div[data-testid="stExpander"] summary {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+div[data-testid="stExpander"] summary:hover {
+  color: var(--text);
+}
+
+div[data-testid="stInfo"] {
+  border-left-color: var(--access);
+}

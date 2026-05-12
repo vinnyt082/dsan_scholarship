@@ -1,0 +1,11 @@
+year,case_geography,NAME,geo_level,mean_commute_minutes,median_home_value,median_household_income,home_value_to_income_ratio,housing_access_quadrant
+2023,"Washington, DC area proxy","District of Columbia, District of Columbia",selected county proxy,30.27902956261165,724600,106287,6.817390649844289,higher housing pressure / higher commute burden
+2023,San Francisco area proxy,"San Francisco County, California",selected county proxy,31.228407467211877,1380500,141446,9.759908374927534,higher housing pressure / higher commute burden
+2023,New York area proxy,"New York County, New York",selected county proxy,31.40232076427546,1108900,104553,10.606104081183704,higher housing pressure / higher commute burden
+2023,Los Angeles area proxy,"Los Angeles County, California",selected county proxy,30.791934689828043,783300,87760,8.925478577939836,higher housing pressure / higher commute burden
+2023,Atlanta area proxy,"Fulton County, Georgia",selected county proxy,28.00357094503114,431200,91490,4.7130833970925785,lower housing pressure / lower commute burden
+2023,Dallas area proxy,"Dallas County, Texas",selected county proxy,27.199346985002517,277900,74149,3.747859040580453,lower housing pressure / lower commute burden
+2023,Phoenix area proxy,"Maricopa County, Arizona",selected county proxy,26.07291965120514,414700,85518,4.849271498397998,lower housing pressure / lower commute burden
+2023,Denver area proxy,"Denver County, Colorado",selected county proxy,25.425859815765147,586700,91681,6.399363008693186,higher housing pressure / lower commute burden
+2023,Charlotte area proxy,"Mecklenburg County, North Carolina",selected county proxy,25.352366678378125,371200,83765,4.431445114307885,lower housing pressure / lower commute burden
+2023,Chicago area proxy,"Cook County, Illinois",selected county proxy,31.851872920229823,305200,81797,3.731188185385772,lower housing pressure / higher commute burden

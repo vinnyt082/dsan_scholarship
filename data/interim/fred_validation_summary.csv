@@ -1,0 +1,8 @@
+series_id,role,required,status,observations,first_date,last_date,missing_values
+MSPUS,median_home_price_nominal,True,loaded,253,1963-01-01,2026-01-01,0
+CPIAUCSL,cpi_all_items,True,loaded,951,1947-01-01,2026-03-01,1
+MEHOINUSA672N,real_median_household_income,True,loaded,41,1984-01-01,2024-01-01,0
+MORTGAGE30US,mortgage_rate_30y,True,loaded,2875,1971-04-02,2026-04-30,0
+CSUSHPINSA,case_shiller_index,True,loaded,614,1975-01-01,2026-02-01,144
+CUSR0000SAH1,shelter_cpi,False,loaded,879,1953-01-01,2026-03-01,1
+CUSR0000SAS4,transportation_services_cpi,False,loaded,843,1956-01-01,2026-03-01,1

@@ -1,0 +1,11 @@
+year,case_geography,NAME,state_fips,county_fips,mean_commute_minutes,median_home_value,median_household_income,home_value_to_income_ratio,source,geo_level
+2023,"Washington, DC area proxy","District of Columbia, District of Columbia",11,001,30.27902956261165,724600,106287,6.817390649844289,Census ACS 5-year,selected county proxy
+2023,San Francisco area proxy,"San Francisco County, California",06,075,31.228407467211877,1380500,141446,9.759908374927534,Census ACS 5-year,selected county proxy
+2023,New York area proxy,"New York County, New York",36,061,31.40232076427546,1108900,104553,10.606104081183705,Census ACS 5-year,selected county proxy
+2023,Los Angeles area proxy,"Los Angeles County, California",06,037,30.791934689828043,783300,87760,8.925478577939836,Census ACS 5-year,selected county proxy
+2023,Atlanta area proxy,"Fulton County, Georgia",13,121,28.00357094503114,431200,91490,4.7130833970925785,Census ACS 5-year,selected county proxy
+2023,Dallas area proxy,"Dallas County, Texas",48,113,27.199346985002517,277900,74149,3.747859040580453,Census ACS 5-year,selected county proxy
+2023,Phoenix area proxy,"Maricopa County, Arizona",04,013,26.07291965120514,414700,85518,4.849271498397998,Census ACS 5-year,selected county proxy
+2023,Denver area proxy,"Denver County, Colorado",08,031,25.425859815765147,586700,91681,6.399363008693186,Census ACS 5-year,selected county proxy
+2023,Charlotte area proxy,"Mecklenburg County, North Carolina",37,119,25.352366678378125,371200,83765,4.431445114307885,Census ACS 5-year,selected county proxy
+2023,Chicago area proxy,"Cook County, Illinois",17,031,31.851872920229823,305200,81797,3.731188185385772,Census ACS 5-year,selected county proxy

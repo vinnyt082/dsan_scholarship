@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- house body, centered-left -->
+  <rect x="12" y="32" width="24" height="18" rx="2" stroke="#22313A" stroke-width="2"/>
+  <!-- roof -->
+  <path d="M8 34 L24 20 L40 34" stroke="#22313A" stroke-width="2.2"/>
+  <!-- door -->
+  <rect x="21" y="40" width="6" height="10" rx="1" stroke="#667783" stroke-width="1.5"/>
+  <!-- upward price arrow, offset right with clear gap -->
+  <line x1="50" y1="46" x2="50" y2="22" stroke="#9A3F2F" stroke-width="2.2"/>
+  <polyline points="46,27 50,22 54,27" stroke="#9A3F2F" stroke-width="2.2"/>
+  <!-- dollar sign, below arrow shaft -->
+  <text x="50" y="53" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#9A3F2F">$</text>
+</svg>

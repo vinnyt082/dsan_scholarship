@@ -1,0 +1,5 @@
+{
+  "url": "https://api.census.gov/data/2023/acs/acs5?get=NAME%2CB08013_001E%2CB08012_001E%2CB25077_001E%2CB19013_001E&for=county%3A031&in=state%3A17&key=REDACTED",
+  "status_code": 200,
+  "text": "[[\"NAME\",\"B08013_001E\",\"B08012_001E\",\"B25077_001E\",\"B19013_001E\",\"state\",\"county\"],\n[\"Cook County, Illinois\",\"67472555\",\"2118323\",\"305200\",\"81797\",\"17\",\"031\"]]"
+}

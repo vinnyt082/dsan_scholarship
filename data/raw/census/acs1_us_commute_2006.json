@@ -1,0 +1,5 @@
+{
+  "url": "https://api.census.gov/data/2006/acs/acs1?get=NAME%2CB08013_001E%2CB08012_001E&for=us%3A%2A&key=REDACTED",
+  "status_code": 200,
+  "text": "[[\"NAME\",\"B08013_001E\",\"B08012_001E\",\"us\"],\n[\"United States\",\"3320069175\",\"132854797\",\"1\"]]"
+}

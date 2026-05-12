@@ -1,0 +1,30 @@
+source,geo_level,geography,NAME,year,B08013_001E,B08012_001E,mean_commute_minutes
+Census ACS 1-year,national,United States,United States,2005,3216410730,128294865,25.070455703741533
+Census ACS 1-year,national,United States,United States,2006,3320069175,132854797,24.99020923572673
+Census ACS 1-year,national,United States,United States,2007,3385247920,133583062,25.34189491778531
+Census ACS 1-year,national,United States,United States,2008,3515080865,138098545,25.453424328257768
+Census ACS 1-year,national,United States,United States,2009,3336084810,132673634,25.145047357337027
+Census ACS 1-year,national,United States,United States,2010,3316458395,131016810,25.313228088823106
+Census ACS 1-year,national,United States,United States,2011,3373993175,132275850,25.507250000661497
+Census ACS 1-year,national,United States,United States,2012,3461273305,134719017,25.692536822770908
+Census ACS 1-year,national,United States,United States,2013,3528249695,136733367,25.80386757388926
+Census ACS 1-year,national,United States,United States,2014,3628736150,139328071,26.044544534030045
+Census ACS 1-year,national,United States,United States,2015,3739568815,141481178,26.431564027548596
+Census ACS 1-year,national,United States,United States,2016,3802425670,142785366,26.630359794714536
+Census ACS 1-year,national,United States,United States,2017,3891349480,144808353,26.872410322904507
+Census ACS 1-year,national,United States,United States,2018,3967761655,146357588,27.110050863915575
+Census ACS 1-year,national,United States,United States,2019,4078708605,147970546,27.56432759935886
+Census ACS 1-year,national,United States,United States,2021,3247967415,126746081,25.625781794389365
+Census ACS 1-year,national,United States,United States,2022,3591156075,136196004,26.36755829488213
+Census ACS 1-year,national,United States,United States,2023,3749032990,139948165,26.78872559708089
+Census ACS 1-year,national,United States,United States,2024,3895171370,143334079,27.175472833644818
+Census ACS 5-year,selected county proxy,"Washington, DC area proxy","District of Columbia, District of Columbia",2023,7881480,260295,30.27902956261165
+Census ACS 5-year,selected county proxy,San Francisco area proxy,"San Francisco County, California",2023,10752940,344332,31.228407467211877
+Census ACS 5-year,selected county proxy,New York area proxy,"New York County, New York",2023,20951440,667194,31.40232076427546
+Census ACS 5-year,selected county proxy,Los Angeles area proxy,"Los Angeles County, California",2023,122903390,3991415,30.791934689828043
+Census ACS 5-year,selected county proxy,Atlanta area proxy,"Fulton County, Georgia",2023,11582725,413616,28.00357094503114
+Census ACS 5-year,selected county proxy,Dallas area proxy,"Dallas County, Texas",2023,30355940,1116054,27.199346985002517
+Census ACS 5-year,selected county proxy,Phoenix area proxy,"Maricopa County, Arizona",2023,46318985,1776517,26.07291965120514
+Census ACS 5-year,selected county proxy,Denver area proxy,"Denver County, Colorado",2023,7976855,313730,25.425859815765147
+Census ACS 5-year,selected county proxy,Charlotte area proxy,"Mecklenburg County, North Carolina",2023,11401010,449702,25.352366678378125
+Census ACS 5-year,selected county proxy,Chicago area proxy,"Cook County, Illinois",2023,67472555,2118323,31.851872920229823
