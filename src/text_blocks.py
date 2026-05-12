@@ -1,4 +1,4 @@
-"""Approved narrative copy for the Streamlit data story."""
+"""Narrative copy for the Streamlit data story."""
 
 APP_SUBTITLE = "A data story about housing prices, paychecks, and the hidden cost of access"
 
@@ -317,12 +317,6 @@ METHODS_REFERENCES = [
 CLAIM_GUARDRAILS = (
     "Language stays non-causal: findings add context and suggest tradeoffs. The story does not claim housing prices "
     "caused longer commutes or that the analysis proves suburbanization."
-)
-PERSONAL_NOTE = (
-    "This project was completed under a compressed timeline because it completely overlapped with a pre-planned "
-    "trip. I recognize that outside obligations are part of life and not an excuse for the "
-    "quality of submitted work. I include this only as context: with more time, I would have liked to "
-    "further refine the visual design, expand the geographic treatment, and polish the final presentation."
 )
 AI_ASSISTANCE_NOTE = (
     "Claude was used in an assistive capacity to generate the standalone SVG icons used in the Home page "
