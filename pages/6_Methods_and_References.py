@@ -44,6 +44,3 @@ for ref in METHODS_REFERENCES:
 
 st.markdown("### AI assistance")
 st.markdown(AI_ASSISTANCE_NOTE)
-
-st.markdown("### Personal note")
-st.markdown(PERSONAL_NOTE)
