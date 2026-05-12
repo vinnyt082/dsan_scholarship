@@ -23,11 +23,13 @@ from src.text_blocks import (
     CONCLUSION_IMPLICATION_2_TITLE,
     CONCLUSION_IMPLICATION_3_TEXT,
     CONCLUSION_IMPLICATION_3_TITLE,
+    CONCLUSION_IMPLICATIONS_INTRO,
     CONCLUSION_IMPLICATIONS_TITLE,
     CONCLUSION_NOT_CLAIM_TEXT,
     CONCLUSION_NOT_CLAIM_TITLE,
     CONCLUSION_OPENING,
     CONCLUSION_OPENING_2,
+    CONCLUSION_OPENING_3,
     CONCLUSION_RECAP_STEP_ACCESS,
     CONCLUSION_RECAP_STEP_COMBINED,
     CONCLUSION_RECAP_STEP_PAYCHECK,
@@ -86,6 +88,7 @@ load_css()
 st.title(CONCLUSION_TITLE)
 st.markdown(f'<p class="paychecks-page-intro story-readable">{escape(CONCLUSION_OPENING)}</p>', unsafe_allow_html=True)
 st.markdown(f'<p class="paychecks-page-intro story-readable">{escape(CONCLUSION_OPENING_2)}</p>', unsafe_allow_html=True)
+st.markdown(f'<p class="story-page-intro story-readable">{escape(CONCLUSION_OPENING_3)}</p>', unsafe_allow_html=True)
 
 try:
     national = load_national_story()
@@ -114,6 +117,7 @@ st.markdown(
     f'<h3 class="section-kicker section-head-normal">{escape(CONCLUSION_IMPLICATIONS_TITLE)}</h3>',
     unsafe_allow_html=True,
 )
+st.markdown(f'<p class="story-page-intro story-readable">{escape(CONCLUSION_IMPLICATIONS_INTRO)}</p>', unsafe_allow_html=True)
 st.markdown(_implication_cards_html(), unsafe_allow_html=True)
 
 st.markdown(f'<p class="conclusion-bridge">{escape(CONCLUSION_BRIDGE)}</p>', unsafe_allow_html=True)

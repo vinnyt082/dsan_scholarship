@@ -226,8 +226,16 @@ CONCLUSION_OPENING = (
     "Even then, the story is incomplete if affordability is treated only as dollars."
 )
 CONCLUSION_OPENING_2 = (
-    "Mean one-way commute time adds a second dimension: access also has a cost — in minutes, routine, flexibility, "
+    "Mean one-way commute time adds a second dimension: access also has a cost \u2014 in minutes, routine, flexibility, "
     "and proximity to opportunity."
+)
+CONCLUSION_OPENING_3 = (
+    "Over time, the national picture points to a clear shift: housing became more expensive in real terms, "
+    "and by 2024 the median home sale price represented a larger multiple of real median household income "
+    "than it did in the mid-1980s. Commute data cover a shorter period, but they add a recent access lens: "
+    "the time cost of reaching work remains part of the lived affordability picture. The project\u2019s "
+    "conclusion is not that one metric explains cost of living, but that the story has become harder to "
+    "read from prices alone."
 )
 CONCLUSION_RECAP_TITLE = "The story in four steps"
 CONCLUSION_RECAP_STEP_REAL_PRICES = "Real median home sale prices more than doubled from 1963 to 2024."
@@ -236,7 +244,8 @@ CONCLUSION_RECAP_STEP_PAYCHECK = (
     "marker of price-to-income pressure."
 )
 CONCLUSION_RECAP_STEP_ACCESS = (
-    "Mean one-way commute time adds a recent national lens on access burden alongside the longer housing record."
+    "Commute data cover a shorter period, but from 2005 to 2024 they add a recent view of how access "
+    "burden fits into the cost-of-living story."
 )
 CONCLUSION_RECAP_STEP_COMBINED = (
     "The selected-county snapshot shows that housing pressure and access burden do not always line up in the "
@@ -266,16 +275,37 @@ CONCLUSION_LAYER_CARDS = [
     ),
 ]
 CONCLUSION_THESIS = (
-    "Affordability is not only the sticker price of housing. It also depends on the combined burden "
-    "of housing pressure and access."
+    "Affordability should be measured not only by the sticker price of housing, but by the combined "
+    "burden of housing pressure and access."
 )
 CONCLUSION_IMPLICATIONS_TITLE = "What this means"
-CONCLUSION_IMPLICATION_1_TITLE = "Housing policy should consider access, not just unit cost."
-CONCLUSION_IMPLICATION_1_TEXT = "A lower-cost home far from jobs may still carry a heavy lived burden."
-CONCLUSION_IMPLICATION_2_TITLE = "Transportation planning is affordability policy."
-CONCLUSION_IMPLICATION_2_TEXT = "Easing commute burden can improve practical affordability of existing housing."
-CONCLUSION_IMPLICATION_3_TITLE = "Affordability metrics should pair shelter cost with location burden."
-CONCLUSION_IMPLICATION_3_TEXT = "Home price-to-income ratios help, but they read best alongside access measures."
+CONCLUSION_IMPLICATIONS_INTRO = (
+    "These recommendations are intentionally focused on measurement and planning. The analysis does not "
+    "identify one cause of affordability pressure, but it does show why housing cost, income, and access "
+    "should be read together."
+)
+CONCLUSION_IMPLICATION_1_TITLE = (
+    "Housing policymakers and planners should evaluate affordability with access, not only unit cost."
+)
+CONCLUSION_IMPLICATION_1_TEXT = (
+    "This analysis shows that housing pressure and commute burden do not always move together across "
+    "selected places. A lower home value-to-income ratio may still come with a higher time burden."
+)
+CONCLUSION_IMPLICATION_2_TITLE = (
+    "Transportation planners should treat commute burden as part of affordability."
+)
+CONCLUSION_IMPLICATION_2_TEXT = (
+    "The commute data show that mean one-way commute time remains close to its pre-2020 high nationally, "
+    "and the selected county snapshot shows meaningful place-to-place variation."
+)
+CONCLUSION_IMPLICATION_3_TITLE = (
+    "Advocates and analysts should avoid single-score affordability rankings."
+)
+CONCLUSION_IMPLICATION_3_TEXT = (
+    "The combined view shows different affordability profiles: some places have higher housing pressure, "
+    "some have higher commute burden, and some have both. A useful affordability story should preserve "
+    "those differences."
+)
 CONCLUSION_NOT_CLAIM_TITLE = "What this does not claim"
 CONCLUSION_NOT_CLAIM_TEXT = (
     "This project does not claim that rising home prices caused longer commutes. It does not rank entire "
@@ -283,9 +313,9 @@ CONCLUSION_NOT_CLAIM_TEXT = (
     "affordability lens \u2014 one that reads housing pressure alongside access burden."
 )
 CONCLUSION_BRIDGE = (
-    "Taken together, the story is less about finding a single affordability score than about widening the "
-    "lens. Housing prices matter, incomes matter, and access matters too. Read together, they suggest that "
-    "the lived burden of a home depends not only on what it costs, but also on how that location connects "
+    "Taken together, the recommendations point to the same lesson: affordability is not a single number. "
+    "Housing prices matter, incomes matter, and access matters too. Read together, they suggest that the "
+    "lived burden of a home depends not only on what it costs, but also on how that location connects "
     "people to work and daily life."
 )
 CONCLUSION_CLOSING = (

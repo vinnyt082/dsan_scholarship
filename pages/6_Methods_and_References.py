@@ -12,7 +12,6 @@ from src.text_blocks import (
     METHODS_REFERENCES,
     METHODS_TITLE,
     METHODS_PAGE_DISPLAY_TITLE,
-    PERSONAL_NOTE,
 )
 
 
